@@ -140,13 +140,13 @@ class CustomerController extends Controller
                 $objPHPExcel = $objReader->load($modelImport->fileImport->tempName);
                 $sheetData = $objPHPExcel->getActiveSheet()->toArray(null,true,true,true);
                 $baseRow = 2;
-                while(!empty($sheetData[$baseRow]['B'])){
+                while(!empty($sheetData[$baseRow]['A'])){
                     $model = $model = new Customer();
-                    $model->name = (string)$sheetData[$baseRow]['B'];
-                    $model->last_name = (string)$sheetData[$baseRow]['C'];
-                    $model->phone = (string)$sheetData[$baseRow]['D'];
-                    $model->address = (string)$sheetData[$baseRow]['E'];
-                    $model->email = (string)$sheetData[$baseRow]['F'];
+                    $model->name = (string)$sheetData[$baseRow]['A'];
+                    $model->last_name = (string)$sheetData[$baseRow]['B'];
+                    $model->phone = (string)$sheetData[$baseRow]['C'];
+                    $model->address = (string)$sheetData[$baseRow]['D'];
+                    $model->email = (string)$sheetData[$baseRow]['E'];
                     $model->save();
                     $baseRow++;
                  }

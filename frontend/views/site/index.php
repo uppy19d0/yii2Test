@@ -12,10 +12,5 @@ $this->title = 'Crud Customer';
 
         <p><a class="btn btn-lg btn-success" href="http://localhost:8080/index.php?r=customer%2Fcreate">Create Customer</a></p>
     </div>
-
-    <div class="body-content">
-        <footer>
-            <kbd>Luis Aneuris Tavarez De Jesus</kbd>
-        </footer>
 </div>
  

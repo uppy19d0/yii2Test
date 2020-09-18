@@ -1,3 +1,12 @@
+
+<h1>Process to raise it app</h1>
+#1
+Migration to migration table customer
+#2
+lift up the app wiht  "{$./yii serve --docroot="frontend/web/". }"
+#3
+End
+
 <p align="center">
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
